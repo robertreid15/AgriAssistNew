@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Farm Management</string>
+    <string name="title_activity_manager_maps">Map</string>
+    <string name="client_id">400786293538-cr817o67vceu38ngv2s9avenr0t56r08.apps.googleusercontent.com</string>
+    <string name="navigation_drawer_open">Nav drawer opened</string>
+    <string name="navigation_drawer_close">Nav drawer closed!</string>
+    <string name="title_activity_items">ItemsActivity</string>
+</resources>

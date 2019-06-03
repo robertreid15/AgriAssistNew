@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_find_users"
+            android:icon="@drawable/ic_people"
+            android:title="Find users" />
+        <item
+            android:id="@+id/nav_items"
+            android:icon="@drawable/ic_items"
+            android:title="Items" />
+        <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/ic_forum_black_24dp"
+        android:title="Feed" />
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Places Of Interest" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather"
+            android:title="Weather" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Log out" />
+
+    </group>
+
+
+
+</menu>

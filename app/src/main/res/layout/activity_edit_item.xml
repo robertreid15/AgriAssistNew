@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C0C0C0"
+    tools:context=".barcodes.ui.Edit_Item">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="title"
+        android:backgroundTint="#ffff"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/manufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="manufacturer"
+        android:backgroundTint="#ffff"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="price"
+        android:backgroundTint="#ffff"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="category"
+        android:backgroundTint="#ffff"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginClick"
+        android:textColor="#ffff"
+        android:backgroundTint="#3d4042"
+        android:text="Add Item" />
+
+
+</LinearLayout>

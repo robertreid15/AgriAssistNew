@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.robertreid.farm.system">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.Sensor.accelerometer"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".weather.ui.WeatherActivity"
+            android:theme="@style/AppTheme.NoActionBarWithStausBar" />
+        <activity
+            android:name=".barcodes.ui.ItemsActivity"
+            android:label="Items"
+            android:theme="@style/AppTheme.NoActionBarWithStausBar" />
+        <activity
+            android:name=".barcodes.ui.BarcodeScanActivity"
+            android:label="Scanning" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBarWithStausBar">
+            <intent-filter>
+                <action android:name="farm_management.notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDacUPIz-G2lklZZuZ2ikU1mazt1Si82M" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".findusers.FindUserActivity"
+            android:label="Find Users" />
+        <activity
+            android:name=".postWork.FindPostActivity"
+            android:label="Find Posts" />
+        <activity
+            android:name=".placesOfInterest.LocalPlaces"
+            android:label="Find Places" />
+        <activity
+            android:name=".Accelerometer"
+            android:label="Accelerometer" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:label="Chat"
+            android:theme="@style/AppTheme.NoActionBarWithStausBar"> <!-- This needs to be formatted this way or else it will crash -->
+
+        </activity>
+
+        <service android:name=".firebase.FirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".barcodes.ui.Edit_Item"></activity>
+    </application>
+
+</manifest>
